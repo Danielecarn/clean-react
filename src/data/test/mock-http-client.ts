@@ -1,6 +1,6 @@
-import { HttpPostCliente, HttpPostParams, HttpResponse, HttpStatusCode } from '@/data/protocols/http'
+import { HttpPostClient, HttpPostParams, HttpResponse, HttpStatusCode } from '@/data/protocols/http'
 
-export class HttpPostClienteSpy<T, R> implements HttpPostCliente<T, R> {
+export class HttpPostClientSpy<T, R> implements HttpPostClient<T, R> {
   url?: string
   body?: T
   response: HttpResponse<R> = {
